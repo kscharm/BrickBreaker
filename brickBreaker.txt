@@ -1,0 +1,35 @@
+# andrewID: kscharm
+# author Kenny Scharm
+# version 8/8/14
+
+Welcome to Brick Breaker!
+
+Controls: 
+    Left mouse click (hold) - controls the paddle
+    S (key press) - start the ball movement at the beginning of the game
+    N (key press) - create a new game after losing a round
+    E (key press) - exit the game
+    
+Instructions: 
+    Use the paddle to deflect the ball and break the bricks. You are awarded
+    points for breaking bricks and for using power-ups.
+    Blue bricks - one hit (15 points)
+    Red bricks - two hits (30 points)
+    Green bricks - three hits (45 points)
+    Power-ups give you a safety bar at the bottom of the screen (10 points)
+      
+Experience:
+    When thinking of an approach to tackle Brick Breaker, I decided to 'break' it
+    down into parts. I divided the game into three parts: the board, movement, and unit 
+    collision. The first step in creating the game was drawing the board. Similar to Tetris, 
+    the board consists of a 2d-array of colors, where black is the empty color. Movement 
+    was also a important when creating the ball and power-ups. To allow movement, I 
+    added a velocity to both the ball and power-ups. This worked out well because in order 
+    to change direction, all I had to do was multiply the velocity by -1. Unit collision was by
+    far the most difficult task of programming Brick Breaker. My implementation consists of 
+    an xy coordinate system and the indices of the board array. To check to see if two objects 
+    are close to each other, I found the center of each block and created a threshold value. If 
+    the ball is within the threshold, the block is destroyed. 
+    
+    
+   
